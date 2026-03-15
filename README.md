@@ -204,22 +204,17 @@
       <img src="[images.unsplash.com](https://images.unsplash.com/photo-1599204854871-4090eea212cd?auto=format&fit=crop&w=900&q=80)" alt="Parquet et finitions" />
     </div>
   </section>
-  <section id="contact">
-    <h3>Contactez-nous</h3>
+section id="contact">
+    <h3>Contact</h3>
     <div class="contact">
-      <p>📍 Adresse : [7 place colbert lyon 1er]<br />
-      📞 Téléphone : [0659948495]<br />
-      📧 Email : [bernardilionel69@gmail.vom]</p>
+      <p>📞 <a href="tel:+33659948495">06 59 94 84 95</a><br />
+         📧 <a href="mailto:contact.bernardilionel69@gmail.com">contact.bernardilionel69@gmail.com</a></p>
+      <p>Nous répondrons rapidement à toutes vos demandes de devis ou de renseignements.</p>
     </div>
-    <form>
-      <input type="text" placeholder="Nom" required />
-      <input type="email" placeholder="Email" required />
-      <textarea rows="4" placeholder="Votre message..." required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
   </section>
   <footer>
-    © 2024 Bernardi & Fils Artisanats SASU – Tous droits réservés | Mentions légales
+    © 2024 Bernardi & Fils Artisanats SASU – Tous droits réservés
   </footer>
 </body>
+</html> 
 </html>
