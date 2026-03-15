@@ -178,11 +178,11 @@
       </div>
       <div class="service">
         <h4>Revêtements de sols</h4>
-        <p>Carrelage, mosaïque et parquet — élégance et durabilité au quotidien.</p>
+        <p>Carrelage, mosaïque moquette de marbre et parquet — élégance et durabilité au quotidien.</p>
       </div>
       <div class="service">
         <h4>Rénovation complète</h4>
-        <p>Peinture, plaquisterie, plomberie et électricité, clé en main.</p>
+        <p>Peinture, plaquiste, plomberie et électricité, clé en main.</p>
       </div>
       <div class="service">
         <h4>Finitions & Nettoyage</h4>
@@ -207,9 +207,9 @@
   <section id="contact">
     <h3>Contactez-nous</h3>
     <div class="contact">
-      <p>📍 Adresse : [à compléter]<br />
-      📞 Téléphone : [à compléter]<br />
-      📧 Email : [à compléter]</p>
+      <p>📍 Adresse : [7 place colbert lyon 1er]<br />
+      📞 Téléphone : [0659948495]<br />
+      📧 Email : [bernardilionel69@gmail.vom]</p>
     </div>
     <form>
       <input type="text" placeholder="Nom" required />
