@@ -155,7 +155,9 @@
 </head>
 <body>
   <header>
-    <img src=https://imgur.com/sIXQNsf alt="Logo Bernardi & Fils Artisanats" />
+    <img src="[i.imgur.com](https://i.imgur.com/abc123.png)" alt="Logo Bernardi & Fils Artisanats" />
+    <img src="[i.imgur.com](https://imgur.com/sIXQNsf.png)"
+alt="Logo Bernardi & Fils Artisanats" />
     <nav>
       <a href="#accueil">Accueil</a>
       <a href="#services">Services</a>
