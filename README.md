@@ -169,7 +169,7 @@ html/
 </head>
 <body>
 <header>
-  <img src="[i.imgur.com](https://i.imgur.com/sIXQNsf.png)" alt="Logo Bernardi & Fils Artisanats">
+  <img src="[i.imgur.com](<a href="https://imgur.com/PIrKJqz"><img src="https://i.imgur.com/PIrKJqz.png" title="source: imgur.com" /></a>)" alt="Logo Bernardi & Fils Artisanats">
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#realisations">Réalisations</a>
