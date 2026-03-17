@@ -1,221 +1,249 @@
 # bernardifils.github.io
+html
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bernardi & Fils Artisanats SASU – Vente et pose de marbre, carrelage, parquet et rénovation complète." />
-  <title>Bernardi & Fils Artisanats SASU</title>
+  <title>Bernardi & Fils Artisanats — Marbre & Finitions Haut de Gamme</title>
+  <meta name="description" content="Bernardi & Fils Artisanats SASU — Expert du marbre, de la pierre naturelle, du parquet, de la moquette de pierre et des finitions haut de gamme." />
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;500&display=swap)" rel="stylesheet">
   <style>
     :root {
-      --couleur-principale: #c2a676; /* doré élégant */
-      --fond-clair: #ffffff;
+      --doré: #c2a676;
+      --gris: #444;
       --texte: #333;
+      --fond: #ffffff;
     }
     body {
-      font-family: "Georgia", serif;
       margin: 0;
-      background: var(--fond-clair);
+      font-family: 'Open Sans', sans-serif;
       color: var(--texte);
+      background: var(--fond);
+      scroll-behavior: smooth;
       line-height: 1.6;
     }
     header {
-      background: white;
-      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 10px 40px;
-      flex-wrap: wrap;
+      z-index: 1000;
     }
     header img {
       height: 60px;
     }
     nav a {
-      text-decoration: none;
-      color: #555;
       margin: 0 12px;
+      text-decoration: none;
+      color: var(--gris);
       font-weight: 500;
     }
     nav a:hover {
-      color: var(--couleur-principale);
+      color: var(--doré);
+    }
+    section {
+      padding: 90px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
     .hero {
       background: url('[images.unsplash.com](https://images.unsplash.com/photo-1576847445919-44d1c0ec2c6c?auto=format&fit=crop&w=1600&q=80)') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 200px 20px 150px;
+      position: relative;
     }
-    .hero h2 {
-      font-size: 2.3em;
-      margin-bottom: 10px;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.45);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero img {
+      width: 180px;
+      margin-bottom: 15px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin-bottom: 15px;
     }
     .hero p {
       font-size: 1.2em;
-      margin-bottom: 25px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+      margin-bottom: 30px;
     }
-    .hero a {
+    .cta {
       text-decoration: none;
-      background: var(--couleur-principale);
+      background: var(--doré);
       color: white;
-      padding: 12px 25px;
-      border-radius: 4px;
-      font-weight: bold;
+      padding: 14px 30px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: 0.3s;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h3 {
+    .cta:hover { background: #a78e5a; }
+    h2 {
       text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.7em;
-      color: #444;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9em;
+      color: var(--gris);
+      margin-bottom: 40px;
     }
-    .services {
+    .galerie {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      text-align: center;
+      justify-content: center;
+      gap: 15px;
+    }
+    .galerie img {
+      width: 320px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .galerie img:hover {
+      transform: scale(1.03);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
     }
     .service {
-      flex: 1 1 220px;
-      padding: 15px;
-      margin: 10px;
       border: 1px solid #eee;
       border-radius: 8px;
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      padding: 20px;
+      background: #fafafa;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    .service:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .service h3 {
+      color: var(--doré);
+      margin-top: 0;
     }
-    .service h4 {
-      color: var(--couleur-principale);
+    #apropos {
+      background: #fdfdfd;
+      border-left: 4px solid var(--doré);
+      padding: 60px 20px;
     }
-    .about {
-      text-align: center;
-      font-size: 1.1em;
-      color: #555;
-    }
-    .realisations img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 15px;
-    }
-    .contact {
+    #contact {
       text-align: center;
     }
-    form {
-      max-width: 400px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    input, textarea {
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      background: var(--couleur-principale);
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 4px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #a78e5a;
+    #contact a {
+      color: var(--doré);
+      font-weight: 600;
+      text-decoration: none;
     }
     footer {
-      background: #f2f2f2;
       text-align: center;
+      background: #f4f4f4;
       padding: 25px;
       font-size: 0.9em;
-      color: #666;
+      color: #555;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
+        padding: 6px 0;
       }
-      nav {
-        margin-top: 10px;
+      .hero {
+        padding: 150px 20px 100px;
       }
-      .services {
-        flex-direction: column;
-      }
+      .hero h1 { font-size: 1.8em; }
+      .hero p { font-size: 1em; }
+      .galerie img { width: 100%; height: auto; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.imgur.com/PIrKJqz.png"
-alt="Logo Bernardi & Fils Artisanats" />
-    <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section class="hero" id="accueil">
-    <h2>L’élégance du marbre, la précision de l’artisanat</h2>
-    <p>Vente et pose de marbre, carrelage, parquet, rénovation et finitions de qualité.</p>
-    <a href="#contact">Demander un devis</a>
-  </section>
-  <section id="services">
-    <h3>Nos Services</h3>
-    <div class="services">
-      <div class="service">
-        <h4>Marbre & Pierre naturelle</h4>
-        <p>Vente, pose, ponçage et cristallisation pour un rendu d’exception.</p>
-      </div>
-      <div class="service">
-        <h4>Revêtements de sols</h4>
-        <p>Carrelage, mosaïque moquette de marbre et parquet — élégance et durabilité au quotidien.</p>
-      </div>
-      <div class="service">
-        <h4>Rénovation complète</h4>
-        <p>Peinture, plaquiste, plomberie et électricité, clé en main.</p>
-      </div>
-      <div class="service">
-        <h4>Finitions & Nettoyage</h4>
-        <p>Nettoyage de fin de chantier et remise à neuf parfaite.</p>
-      </div>
+<header>
+  <img src="[i.imgur.com](https://i.imgur.com/sIXQNsf.png)" alt="Logo Bernardi & Fils Artisanats">
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <img src="[i.imgur.com](https://i.imgur.com/sIXQNsf.png)" alt="Logo Bernardi & Fils Artisanats">
+    <h1>L’excellence du marbre et des finitions sur‑mesure,<br> pour des intérieurs d’exception.</h1>
+    <p>Expert en marbre, pierre naturelle, moquette de pierre, carrelage, parquet et finitions haut de gamme.</p>
+    <a href="#contact" class="cta">Demander un devis</a>
+  </div>
+</section>
+<section id="realisations">
+  <h2>Nos Réalisations</h2>
+  <div class="galerie">
+    <img src="[i.imgur.com](https://i.imgur.com/FQK0rsA.jpg)" alt="Marbre réalisation 1" />
+    <img src="[i.imgur.com](https://i.imgur.com/2xwSRo1.jpg)" alt="Marbre réalisation 2" />
+    <img src="[i.imgur.com](https://i.imgur.com/nVr8XVj.jpg)" alt="Marbre réalisation 3" />
+    <img src="[i.imgur.com](https://i.imgur.com/RR4olR8.jpg)" alt="Marbre réalisation 4" />
+    <img src="[i.imgur.com](https://i.imgur.com/3W313yJ.jpg)" alt="Marbre réalisation 5" />
+    <img src="[i.imgur.com](https://i.imgur.com/40SsHvL.jpg)" alt="Marbre réalisation 6" />
+    <img src="[i.imgur.com](https://i.imgur.com/y35ydC0.jpg)" alt="Marbre réalisation 7" />
+  </div>
+</section>
+<section id="services">
+  <h2>Nos Services</h2>
+  <div class="services-grid">
+    <div class="service">
+      <h3>Marbre & Pierre naturelle</h3>
+      <p>Vente, pose, ponçage et cristallisation de marbres rares et pierres nobles pour des finitions d’exception.</p>
     </div>
-  </section>
-  <section id="apropos">
-    <h3>À propos</h3>
-    <div class="about">
-      <p><strong>Bernardi & Fils Artisanats SASU</strong> est une entreprise familiale reconnue pour son sérieux et la qualité de ses réalisations.  
-      De la pierre naturelle au parquet, chaque projet est mené avec la précision d’un artisan passionné.</p>
+    <div class="service">
+      <h3>Moquette de pierre</h3>
+      <p>Pose intérieure et extérieure — terrasses, escaliers, piscines. Esthétique et résistance garanties.</p>
     </div>
-  </section>
-  <section id="realisations">
-    <h3>Nos Réalisations</h3>
-    <div class="realisations">
-      <img src="[images.unsplash.com](https://images.unsplash.com/photo-1615561048562-a2cde3f5aa0e?auto=format&fit=crop&w=900&q=80)" alt="Sol en marbre" />
-      <img src="[images.unsplash.com](https://images.unsplash.com/photo-1599204854871-4090eea212cd?auto=format&fit=crop&w=900&q=80)" alt="Parquet et finitions" />
+    <div class="service">
+      <h3>Carrelage & Mosaïque</h3>
+      <p>Pose de carrelages et mosaïques haut de gamme, grands formats, finitions précises et alignements parfaits.</p>
     </div>
-  </section>
-section id="contact">
-    <h3>Contact</h3>
-    <div class="contact">
-      <p>📞 <a href="tel:+33659948495">06 59 94 84 95</a><br />
-         📧 <a href="mailto:bernardilionel69@gmail.com">bernardilionel69@gmail.com</a></p>
-      <p>Nous répondrons rapidement à toutes vos demandes de devis ou de renseignements.</p>
+    <div class="service">
+      <h3>Parquet</h3>
+      <p>Vente, pose et ponçage de parquet massif ou contrecollé. Finitions huilées ou vernies.</p>
     </div>
-  </section>
-  <footer>
-    © 2024 Bernardi & Fils Artisanats SASU – Tous droits réservés
-  </footer>
+    <div class="service">
+      <h3>Rénovation complète</h3>
+      <p>Peinture, plaquisterie, plomberie, électricité. Gestion de chantier clé en main.</p>
+    </div>
+    <div class="service">
+      <h3>Nettoyage & Finitions</h3>
+      <p>Nettoyage post‑chantier, polissage final et contrôle qualité avant livraison.</p>
+    </div>
+  </div>
+</section>
+<section id="apropos">
+  <h2>À propos</h2>
+  <p><strong>Bernardi & Fils Artisanats SASU</strong> est une entreprise familiale spécialisée dans les matériaux nobles et les finitions haut de gamme.  
+    Chaque projet est réalisé avec une exigence absolue, une rigueur artisanale et une précision millimétrée.  
+    Du marbre à la moquette de pierre, nous créons des intérieurs raffinés, durables et élégants.</p>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 <a href="tel:+33659948495">06 59 94 84 95</a><br>
+     📧 <a href="mailto:Bernardilionel69@gmail.com">Bernardilionel69@gmail.com</a></p>
+  <p>Contactez‑nous pour un devis ou une visite de chantier — réponse rapide garantie.</p>
+  <a href="tel:+33659948495" class="cta">Appeler maintenant</a>
+</section>
+<footer>
+  © 2024 Bernardi & Fils Artisanats – Spécialistes du marbre, pierre, moquette de pierre, carrelage et parquet.  
+</footer>
 </body>
-</html> 
 </html>
