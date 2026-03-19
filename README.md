@@ -1,4 +1,6 @@
-# bernardifils.fr
+# bernardifils.github.io
+# bernardifils.github.io
+<!DOCTYPE html>
 html/
 <!DOCTYPE html>
 <html lang="fr">
